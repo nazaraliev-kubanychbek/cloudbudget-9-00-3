@@ -1,0 +1,60 @@
+.footer {
+  background-color: $primewhite;
+  height: 435px;
+  display: flex;
+  align-items: center;
+
+
+  &__title {
+    @include font(700, 18px, 22px);
+    color: $primeblack;
+    margin-bottom: 33px;
+  }
+
+  &__text {
+    @include font(400, 12px, 150%);
+    color: $primeblack;
+    width: 160px;
+  }
+
+  ul {
+    list-style-type: none;
+
+    li {
+      @include font(400, 12px, 160%);
+      text-transform: capitalize;
+    }
+  }
+
+  &__link {
+    @include font(400, 12px, 14px);
+    color: $primeblack;
+    display: block;
+    text-decoration: none;
+
+    &-tel {
+      color: #121212;
+      margin-top: 11px;
+      margin-bottom: 21px;
+    }
+  }
+
+  &__copyright {
+    @include font(400, 12px, 14px);
+    color: $primeblack;
+    margin-top: 141px;
+  }
+  &__icons{
+    display: flex;
+    column-gap: 15px;
+    a{
+      color: $primeblack;
+      transition: .5s;
+      &:hover{
+        color: $primered;
+        transform: scale(1.5);
+      }
+    }
+  }
+
+}

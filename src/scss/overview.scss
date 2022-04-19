@@ -1,0 +1,47 @@
+.overview {
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
+    row-gap: 50px;
+    width: 470px;
+    position: relative;
+
+    &-circle {
+      width: 66px;
+      height: 66px;
+      background-color: $primered;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      transform: translate(-50%, 0);
+      a{
+        color: #ffffff;
+        transition: .5s;
+        &:hover{
+          transform: scale(1.3);
+        }
+      }
+    }
+
+    &-title {
+      @include font(600, 36px, 43px);
+    }
+
+    &-text {
+      @include font(400, 14px, 140%);
+    }
+
+    &-link {
+      @include font(400, 14px, 140%);
+      color: $primered;
+      text-decoration: none;
+    }
+
+  }
+
+}
